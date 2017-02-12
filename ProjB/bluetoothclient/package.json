@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bluetooth-hci-socket": "^0.5.1",
     "express": "^4.14.0",
     "minimist": "^1.2.0",
     "noble": "^1.7.0",
