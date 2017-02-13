@@ -10,7 +10,7 @@ void setup() {
   pinMode(sensorPin, INPUT);
   
   // start the BLE stack
-  RFduinoBLE.deviceName = "andrey"; // change name here to avoid conflict
+  RFduinoBLE.deviceName = "mhealth"; // change name here to avoid conflict
   RFduinoBLE.advertisementData = "piezoelectric";
   RFduinoBLE.txPowerLevel = -4; 
   RFduinoBLE.begin();
