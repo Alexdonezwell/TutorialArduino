@@ -4,7 +4,7 @@
 </head>
 
 <p>
-    Necklace sensor
+Piezoelectric sensor
 </p>
 
 <div id="tester" style="width:90%;height:70%;"></div>
@@ -22,13 +22,11 @@
 
         signals = {
             time: [],
-            top:  [],
-            bottom: [],
-            divide: []
+            piezo:  []
         };
 
         var layout = {
-            yaxis: {range:[0, 1024]}
+            yaxis: {range:[0, 700]}
         }
 
         var socket = io();
@@ -36,33 +34,21 @@
         socket.on('data', function (msg) {
             if (signals.time.length > N) {
                 signals.time.shift();
-                signals.top.shift();
-                signals.bottom.shift();
-                signals.divide.shift();
+                signals.piezo.shift();
             }
 
             signals.time.push((msg.time - startTime)/1000)
-            signals.top.push(msg.top)
-            signals.bottom.push(msg.bottom)
-            signals.divide.push(msg.top/msg.bottom)
+            signals.piezo.push(msg.piezo)
 
             count = count + 1
 
             if (count > 100) {
                 count = 0;
                 var tr1 = {  x: signals.time,
-                                y: signals.top,
-                                name: 'Top sensor'}
+                                y: signals.piezo,
+                                name: 'Piezo'}
 
-                var tr2 = {  x: signals.time,
-                                y: signals.bottom,
-                                name: 'Bottom sensor'}
-
-                var tr3 = {  x: signals.time,
-                                y: signals.divide,
-                                name: 'Swallow'}
-
-                Plotly.newPlot( TESTER, [tr1, tr2, tr3], layout);
+                Plotly.newPlot( TESTER, [tr1], layout);
             }
         });
     }

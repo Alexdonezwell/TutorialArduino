@@ -15,10 +15,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@vfsmpmapps09.fsm.northwestern.edu:/home/git/repos/dzung/bluetoothDesktop.git"
-  },
   "author": "",
   "license": "ISC"
 }
