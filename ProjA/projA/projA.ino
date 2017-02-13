@@ -15,11 +15,6 @@ void setup() {
 void loop() {
   // read the sensor at GPIO1
   sensorValue = analogRead(sensorPin);
-  clockTime = millis();
-
-  // send data in CSV format
-  Serial.print(clockTime);
-  Serial.print(",");
   Serial.println(sensorValue);
 
   // sampling frequency 20 Hz
