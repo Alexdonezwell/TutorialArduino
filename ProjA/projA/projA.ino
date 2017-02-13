@@ -4,11 +4,10 @@
   Sampling rate is 20Hz
  */
 const int sensorPin = 1;
-int sensorValue = 0;  // variable to store the value coming from the sensor
-long clockTime = 0;
+int sensorValue;  // variable to store the value coming from the sensor
 
 void setup() {
-  pinMode(sensorPin, INPUT_PULLUP);
+  pinMode(sensorPin, INPUT);
   Serial.begin(9600);
 }
 
