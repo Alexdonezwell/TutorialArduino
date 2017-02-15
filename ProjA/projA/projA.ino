@@ -1,9 +1,9 @@
 #include <RFduinoBLE.h>
 /*
-  Piezoelectric sensors between GND and pin GPIO1
+  Piezoelectric sensors between GND and pin GPIO2
   Sampling rate is 20Hz
  */
-const int sensorPin = 1;
+const int sensorPin = 2;
 int sensorValue;  // variable to store the value coming from the sensor
 
 void setup() {
