@@ -6,6 +6,7 @@ Serial myPort;  // Create object from Serial class
 String sensorValue; // Data received from the serial port
 PrintWriter output;
 Date d;
+long timestamp;
 
 void setup()
 {  
@@ -27,10 +28,13 @@ void serialEvent(Serial myPort)
 {
   sensorValue = myPort.readStringUntil('\n');
   d = new Date();
-  output.print(d.getTime());
+  timestamp = d.getTime();
+  output.print(timestamp);
   output.print(",");
   output.print(sensorValue); // Write data to file
   output.flush();
+  
+  println(timestamp,',',sensorValue);
 }
 
 void keyPressed()
