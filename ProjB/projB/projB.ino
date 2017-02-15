@@ -11,7 +11,7 @@ void setup() {
   
   // start the BLE stack
   RFduinoBLE.deviceName = "mhealth"; // change name here to avoid conflict
-  RFduinoBLE.advertisementData = "piezoelectric";
+  RFduinoBLE.advertisementData = "piezo";
   RFduinoBLE.txPowerLevel = -4; 
   RFduinoBLE.begin();
 

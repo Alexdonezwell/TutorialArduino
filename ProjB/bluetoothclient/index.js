@@ -8,7 +8,9 @@ var description = "";
 var visualizeOn = false;
 
 var receiveCharacteristic;
-var timenow = Date()
+var timenow = Date();
+
+var lastCountWritten = 0;
 
 //===================================================================================
 // argument line parser
