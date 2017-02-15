@@ -3,7 +3,6 @@ var noble = require('noble'),
 rfduino = require('./necklaceSettings'),
 _ = require('underscore');
 var fs = require('fs');
-var THREE = require("three-js")();
 
 var description = "";
 var visualizeOn = false;
