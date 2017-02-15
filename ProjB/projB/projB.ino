@@ -2,7 +2,7 @@
 
 boolean connectFlag = true;
 
-const int sensorPin = 1;
+const int sensorPin = 2;
 uint32_t sensorValue;
 uint32_t txBuf[5]; // since Bluetooth LE max size is 20 bytes
 
