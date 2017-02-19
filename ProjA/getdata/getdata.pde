@@ -22,6 +22,9 @@ void setup()
 
 void draw()
 {
+  textSize(32);
+  text("Collecting data", 10, 30); 
+  fill(0, 102, 153);
 }
 
 void serialEvent(Serial myPort)
