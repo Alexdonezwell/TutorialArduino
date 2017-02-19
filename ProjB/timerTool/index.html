@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="test.css">
+
+<!-- ====================== firebase ========================= -->
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-database.js"></script>
+
+<script>
+// Initialize Firebase
+var config = {
+    apiKey: "change API key here",
+    authDomain: "habitslab-7f34e.firebaseapp.com",
+    databaseURL: "https://habitslab-7f34e.firebaseio.com",
+    storageBucket: "habitslab-7f34e.appspot.com",
+};
+
+firebase.initializeApp(config);
+</script>
+
+<script src="experiment.js"></script>
+<script src="test.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<title>Experiment</title>
+</head>
+
+<div id="header">Swallow saliva</div>
+
+	
+<div id="content-wrap">
+
+		<label id="ActionGuide"> Eating </label>
+		<br>
+		<label id = "timer"></label>
+		<br>
+		<button id='button' style="display:none"> Go to the next phase </button>
+</div>
+
+</html>
+
