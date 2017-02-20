@@ -145,7 +145,7 @@ function playsound() {
 
     if ((globalIndex < experiment.length - 1) && (globalIndex > 0)) {
         $('#timer').css('color', 'purple')
-        $('#ActionGuide').text('Prepare for the next action: ' + experiment[globalIndex + 1].action)
+        // $('#ActionGuide').text('Prepare for the next action: ' + experiment[globalIndex + 1].action)
     } else if (globalIndex == experiment.length - 1){
         $('#ActionGuide').text('Please finish the remaining food, this is the last step of the experiment. Enjoy your meal!')
     }

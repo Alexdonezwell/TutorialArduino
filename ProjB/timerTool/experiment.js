@@ -1,68 +1,65 @@
 var experiment = [
     {
         action: 'Get ready',
-        secs: 10 },
+        secs: 5 },
     {   
-        action: 'Eat soup with spoon',
-        secs: 120 }, 
+        action: 'Drink 1',
+        secs: 10 }, 
     {   
-        action: 'Rest',
-        secs: 30 }, 
+        action: 'Drink 2',
+        secs: 10 }, 
     {   
-        action: 'Eat bread with hand',
-        secs: 120 }, 
+        action: 'Drink 3',
+        secs: 10 },         
     {   
-        action: 'Rest',
-        secs: 30 },    
+        action: 'Drink 4',
+        secs: 10 },         
     {   
-        action: 'Drink water from a cup',
-        secs: 120 }, 
-    {  
-        action: 'Rest',
-        secs: 30 },
+        action: 'Drink 5',
+        secs: 10 },         
     {   
-        action: 'Eat salad',
-        secs: 120 },
+        action: 'Drink 6',
+        secs: 10 },         
     {   
-        action: 'Rest',
-        secs: 30 }, 
-    {
-        action: 'Drink water using straw',
-        secs: 120
-    },
-    {
-        action: 'Rest',
-        secs: 30
-    },
-    {
-        action: 'Eat chicken with fork and knife',
-        secs: 120
-    },
-    {
-        action: 'Rest',
-        secs: 30
-    },
-    {
-        action: 'Make a phone call for 2 mins',
-        secs: 120
-    },
-    {
-        action: 'Rest',
-        secs: 30
-    },
-    {
-        action: 'Eat chips',
-        secs: 120
-    },
-    {
-        action: 'Rest',
-        secs: 30
-    },   {   
-        action: 'Style and brush your hair in front of the laptop',
-        secs: 120 
-    },
-    {
-        action: 'Rest',
-        secs: 30
-    }
+        action: 'Drink 7',
+        secs: 10 },         
+    {   
+        action: 'Drink 8',
+        secs: 10 },         
+    {   
+        action: 'Drink 9',
+        secs: 10 },         
+    {   
+        action: 'Drink 10',
+        secs: 10 },         
+    {   
+        action: 'Drink 11',
+        secs: 10 },         
+    {   
+        action: 'Drink 12',
+        secs: 10 },         
+    {   
+        action: 'Drink 13',
+        secs: 10 },         
+    {   
+        action: 'Drink 14',
+        secs: 10 },         
+    {   
+        action: 'Drink 15',
+        secs: 10 },         
+    {   
+        action: 'Drink 16',
+        secs: 10 },         
+    {   
+        action: 'Drink 17',
+        secs: 10 },         
+    {   
+        action: 'Drink 18',
+        secs: 10 },         
+    {   
+        action: 'Drink 19',
+        secs: 10 },         
+    {   
+        action: 'Drink 20',
+        secs: 10 }         
 ]
