@@ -105,7 +105,7 @@ window.onload = function() {
     $('#ActionGuide').text(experiment[globalIndex].action);
 
     timer = new CountDownTimer(experiment[globalIndex].secs);
-    timer.setAlarmTime(6);
+    timer.setAlarmTime(1);
     timer.onAlarm(playsound);
     reset = timer.onTick(format).start();
 
