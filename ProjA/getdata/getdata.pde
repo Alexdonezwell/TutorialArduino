@@ -8,9 +8,12 @@ PrintWriter output;
 Date d;
 long timestamp;
 
+void settings() {
+  size(400, 100);
+}
+
 void setup()
 {  
-  size (400,100);
   output = createWriter("data.csv"); // output file
 
   // Change the port to the correct one on your system
