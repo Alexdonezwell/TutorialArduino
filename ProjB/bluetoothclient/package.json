@@ -6,8 +6,9 @@
   "dependencies": {
     "express": "^4.14.0",
     "minimist": "^1.2.0",
-    "noble": "^1.7.0",
+    "noble": "git://github.com/jacobrosenthal/noble.git#highsierra",
     "socket.io": "^1.5.0",
+    "three-js": "^79.0.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {},
